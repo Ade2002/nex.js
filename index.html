@@ -16,14 +16,17 @@
             {/* Passing props  */}
             <Header cough='ade'/>
             <Header cough='yellow' />
+            <Header/>
                 <h1>Ade is cool 🚀</h1>
                 cooler
             </>
         }
         const Header = ({ cough }) => { 
             console.log(cough); 
+            const Default = "sneeze"
             return <> 
-            <header> {cough} </header>
+            {/* Using a ternary operator for Header that doesn't have a props value make it take the default */}
+            <header> {cough ? cough : Default}</header>
             </>
         }
         const root =  ReactDOM.createRoot(document.getElementById('root'))
