@@ -5,23 +5,24 @@
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <title>adde</title>
+    <title>Ade</title>
 </head>
 
 <body>
     <div id="root"></div>
     <script type="text/jsx">
-        const Hompage = () => {
+        const Homepage = () => {
             return <>
-            <Header/>
+            <Header cough='ade'/>
+            <Header cough='yellow' />
                 <h1>Ade is cool 🚀</h1>
                 cooler
             </>
         }
-        const Header = () => { return <> <header>oya</header></>}
+        const Header = ({ cough }) => { console.log(cough); return <> <header>{cough}</header></>}
         const root =  ReactDOM.createRoot(document.getElementById('root'))
         root.render(
-        <Hompage />)
+        <Homepage />)
         /* ReactDOM.render(<p>Hello</p>, document.getElementById('root')); */
     </script>
 </body>
