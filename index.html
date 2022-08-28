@@ -11,14 +11,17 @@
 <body>
     <div id="root"></div>
     <script type="text/jsx">
-        const Ade = () => {
-            return <div>
-                <h1>Ade is cool</h1>
+        const Hompage = () => {
+            return <>
+            <Header/>
+                <h1>Ade is cool 🚀</h1>
                 cooler
-            </div>
+            </>
         }
+        const Header = () => { return <> <header>oya</header></>}
         const root =  ReactDOM.createRoot(document.getElementById('root'))
-        root.render(<Ade />)
+        root.render(
+        <Hompage />)
         /* ReactDOM.render(<p>Hello</p>, document.getElementById('root')); */
     </script>
 </body>
